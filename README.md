@@ -7,7 +7,7 @@ El tutorial consta de 3 partes: Instalación, Analasis del código y configuralc
 	* [Instalación](#Instalación)
 	* [Analisis de código](#Analisis-de-codigo)
 		* [Interfaz Gráfica](#Interfaz-gráfica)
-		* [Línea de comandos (opcional)](#Línea-de-comandos-(opcional))
+		* [Línea de comandos (opcional)](#Línea-de-comandos-\(opcional\))
 	* [Configuración de perfiles](#Configuración-de-perfiles)
 
 ## Instalación
