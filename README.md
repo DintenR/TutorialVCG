@@ -3,7 +3,11 @@
 En este repositorio se encuentra todo el material necesario para seguir el tutorial de la herramienta **Visual Code Grepper** (VCG).
 El tutorial consta de 3 partes: Instalación, Analasis del código y configuralción de perfiles. En cada una de ellas aparecen los pasos a seguir para conseguir completar cada apartado.
 
-[TOC]
++[Instalacion](#Instalación)
++[Analisis de código](#Analisis-de-codigo)
+	+[Interfaz Gráfica](#Interfaz-gráfica)
+	+[Línea de comandos (opcional)](#Línea-de-comandos-(opcional))
++[Configuración de perfiles](#Configuración-de-perfiles)
 
 ## Instalación
 En este apartado vamos a instalar el software de analisis de codigo estático VCG. Para ello hay que seguir los pasos que se indican a continuacion:
@@ -44,11 +48,11 @@ Para ello debemos seleccionar en *Setings->Java*.
 
 ![Imagen 3: Ficheros encontrados](res/FicherosEncontrados.png "Imagen 3: Ficheros encontrados")
 
-	Para analizar el código hay 3 opciones: Solo código, solo comentarios o analisis completo. Usaremos el análisis completo para poder ver todas la funcionalidades, pero el proceso sería el mismo para los 3.
+Para analizar el código hay 3 opciones: Solo código, solo comentarios o analisis completo. Usaremos el análisis completo para poder ver todas la funcionalidades, pero el proceso sería el mismo para los 3.
 
-	Selecionamos *Scan->Full Scan*.
+Selecionamos *Scan->Full Scan*.
 
-	El análisis comenzará y se mostrará una barra de progreso.
+El análisis comenzará y se mostrará una barra de progreso.
 
 4. Visualización de resultados. 
 
@@ -63,13 +67,13 @@ Descripción del problema
 [Vista previa del fragmento de código]
 ```
 
-	Además se muestra con un código de colores en función de la severidad del error(*Imagen 4: Resultado Análisis*) y es posible ver una vista resumen del análisis(*Imagen 5: Resumen Análisis*).
+Además se muestra con un código de colores en función de la severidad del error(*Imagen 4: Resultado Análisis*) y es posible ver una vista resumen del análisis(*Imagen 5: Resumen Análisis*).
 
 ![Imagen 4: Resultado Análisis](res/Resultado.png "Imagen 4: Resultado Análisis")
 
 ![Imagen 5: Resumen Análisis](res/Resumen.png "Imagen 5: Resumen Análisis")
 
-	VCG cuenta tambíen con un modo de visualización para el análisis de los comentarios. En este modo se muestra un diagrama de sectores en el que se muestra la proporcion de comentarios, líneas de codigo, líneas en blanco y líneas con errores respecto al total de líneas (*Imagen 6: Diagrama de Sectores*).
+VCG cuenta tambíen con un modo de visualización para el análisis de los comentarios. En este modo se muestra un diagrama de sectores en el que se muestra la proporcion de comentarios, líneas de codigo, líneas en blanco y líneas con errores respecto al total de líneas (*Imagen 6: Diagrama de Sectores*).
 
 ![Imagen 6: Diagrama de Sectores](res/Sectores.png "Imagen 6: Diagrama de Sectores")
 
@@ -124,7 +128,7 @@ Los pasos a seguir son los siguientes:
 
 ``java.util.List=>Has usado la interfaz List``
 
-	Y guardamos el fichero en el escritorio o en algún otro lugar para no sobreescribir el original.
+Y guardamos el fichero en el escritorio o en algún otro lugar para no sobreescribir el original.
 
 5. En la pantalla de configuracion, seleccionamos la opción *...* (tres puntos) para buscar el nuevo fichero de configuracion.
 
