@@ -3,11 +3,12 @@
 En este repositorio se encuentra todo el material necesario para seguir el tutorial de la herramienta **Visual Code Grepper** (VCG).
 El tutorial consta de 3 partes: Instalación, Analasis del código y configuralción de perfiles. En cada una de ellas aparecen los pasos a seguir para conseguir completar cada apartado.
 
-+[Instalacion](#Instalación)
-+[Analisis de código](#Analisis-de-codigo)
-	+[Interfaz Gráfica](#Interfaz-gráfica)
-	+[Línea de comandos (opcional)](#Línea-de-comandos-(opcional))
-+[Configuración de perfiles](#Configuración-de-perfiles)
+* [Turorial_VCG](#Tutorial-VCG)
+	* [Instalación](#Instalación)
+	* [Analisis de código](#Analisis-de-codigo)
+		* [Interfaz Gráfica](#Interfaz-gráfica)
+		* [Línea de comandos (opcional)](#Línea-de-comandos-(opcional))
+	* [Configuración de perfiles](#Configuración-de-perfiles)
 
 ## Instalación
 En este apartado vamos a instalar el software de analisis de codigo estático VCG. Para ello hay que seguir los pasos que se indican a continuacion:
