@@ -30,11 +30,11 @@ Para analizar el código seguiremos los siguientes pasos:
 Para ello debemos seleccionar en *Setings->Java*.
 2. Buscar la carpeta que contenga el código fuente.
 
-Se puede analizar cualquier código Java, pero para el tutorial utilizaré el código que dejo disponible en el repositorio.
+	Se puede analizar cualquier código Java, pero para el tutorial utilizaré el código que dejo disponible en el repositorio.
 
-Para buscar seleccionamos *File->New Target Directory*  o pulsamos **``Ctrl+N``**.
+	Para buscar seleccionamos *File->New Target Directory*  o pulsamos **``Ctrl+N``**.
 
-Saldrá una ventana. Seleccionamos la carpeta que contenga el codigo fuente(*Imagen 2: Seleccion de carpeta*).
+	Saldrá una ventana. Seleccionamos la carpeta que contenga el codigo fuente(*Imagen 2: Seleccion de carpeta*).
 
 ![Imagen 2: Selección de carpeta](res/SeleccionarCarpeta.png "Imagen 2: Selección de carpeta")
 
@@ -44,11 +44,11 @@ Saldrá una ventana. Seleccionamos la carpeta que contenga el codigo fuente(*Ima
 
 ![Imagen 3: Ficheros encontrados](res/FicherosEncontrados.png "Imagen 3: Ficheros encontrados")
 
-Para analizar el código hay 3 opciones: Solo código, solo comentarios o analisis completo. Usaremos el análisis completo para poder ver todas la funcionalidades, pero el proceso sería el mismo para los 3.
+	Para analizar el código hay 3 opciones: Solo código, solo comentarios o analisis completo. Usaremos el análisis completo para poder ver todas la funcionalidades, pero el proceso sería el mismo para los 3.
 
-Selecionamos *Scan->Full Scan*.
+	Selecionamos *Scan->Full Scan*.
 
-El análisis comenzará y se mostrará una barra de progreso.
+	El análisis comenzará y se mostrará una barra de progreso.
 
 4. Visualización de resultados. 
 
@@ -63,17 +63,17 @@ Descripción del problema
 [Vista previa del fragmento de código]
 ```
 
-Además se muestra con un código de colores en función de la severidad del error(*Imagen 4: Resultado Análisis*) y es posible ver una vista resumen del análisis(*Imagen 5: Resumen Análisis*).
+	Además se muestra con un código de colores en función de la severidad del error(*Imagen 4: Resultado Análisis*) y es posible ver una vista resumen del análisis(*Imagen 5: Resumen Análisis*).
 
 ![Imagen 4: Resultado Análisis](res/Resultado.png "Imagen 4: Resultado Análisis")
 
 ![Imagen 5: Resumen Análisis](res/Resumen.png "Imagen 5: Resumen Análisis")
 
-VCG cuenta tambíen con un modo de visualización para el análisis de los comentarios. En este modo se muestra un diagrama de sectores en el que se muestra la proporcion de comentarios, líneas de codigo, líneas en blanco y líneas con errores respecto al total de líneas (*Imagen 6: Diagrama de Sectores*).
+	VCG cuenta tambíen con un modo de visualización para el análisis de los comentarios. En este modo se muestra un diagrama de sectores en el que se muestra la proporcion de comentarios, líneas de codigo, líneas en blanco y líneas con errores respecto al total de líneas (*Imagen 6: Diagrama de Sectores*).
 
 ![Imagen 6: Diagrama de Sectores](res/Sectores.png "Imagen 6: Diagrama de Sectores")
 
-Para ver el diagrama hay que seleccionar *Scan->VisualCode/Comment Breakdown*.
+	Para ver el diagrama hay que seleccionar *Scan->VisualCode/Comment Breakdown*.
 
 ### Línea de comandos (opcional)
 
@@ -124,7 +124,7 @@ Los pasos a seguir son los siguientes:
 
 ``java.util.List=>Has usado la interfaz List``
 
-Y guardamos el fichero en el escritorio o en algún otro lugar para no sobreescribir el original.
+	Y guardamos el fichero en el escritorio o en algún otro lugar para no sobreescribir el original.
 
 5. En la pantalla de configuracion, seleccionamos la opción *...* (tres puntos) para buscar el nuevo fichero de configuracion.
 
