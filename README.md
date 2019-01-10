@@ -22,7 +22,7 @@ VCG permite realizar el análisis del código de dos formas diferentes: a travé
 ###Interfaz gráfica
 
 Para utilizar la interfaz gráfica debemos iniciar la aplicación usando el acceso directo que se nos ha creado en el escritorio tras la instalación. Trás hacer esto, aparecerá un dialogo recordandonos que debemos escoger el lenguaje que vamos a analizar. Después, debería abrirse la ventana principal(*Imagen 1: VGC*).
-![Imagen 1: VCG](res/VentanaVCG.png "Imagen 1: VCG")
+![Imagen 1: VCG](res/ventanaVCG.png "Imagen 1: VCG")
 Para analizar el código seguiremos los siguientes pasos:
 1. Escoger Java como lenguaje a analizar .
 Para ello debemos seleccionar en *Setings->Java*.
@@ -67,11 +67,15 @@ VisualCodeGrepper [options]
 ```
 Si no se indica una opción para exportar los resultados, solamente se inicia el programa con el lenguaje seleccionado y los ficheros cargados para comenzar el análisis.
 Por tanto, si ejecutamos el siguiente comando:
+
 ``VisualCodeGrepper -t "<Ruta al codigo>" -l "JAVA"``
+
 Se abrirá el programa con el lenguaje Java y los archivos cargados listo para ejecutar el análisis(*Imagen 7: Programa tras ejecutar el comando*).
 ![Imagen 7: Programa tras ejecutar el comando*](res/InicioComandos.png "Imagen 7: Programa tras ejecutar el comando*
 Y, si ejecutamos este otro:
+
 ``VisualCodeGrepper -t "<Ruta al codigo>" -l "JAVA" -x "C:\Users\<Usuario>\Result.xml"``
+
 Se abrirá el programa, se ejecutará el analisis y se guardará en el escritorio en formato XML.
 
 ##Configuración de perfiles
@@ -85,7 +89,9 @@ Los pasos a seguir son los siguientes:
 ![Imagen 8: Configuración](res/Configuracion.png "Imagen 8: Configuración")
 3. Seleccionamos el botón *Edit*  junto a la ruta del fichero Java.
 4. Se abrirá el editor de texto. Nos vamos a la última linea del fichero e intoducimos la siguiente linea:
+
 ``java.util.List=>Has usado la interfaz List``
+
 Y guardamos el fichero en el escritorio o en algún otro lugar para no sobreescribir el original.
 5. En la pantalla de configuracion, seleccionamos la opción *...* (tres puntos)
 para buscar el nuevo fichero de configuracion.
