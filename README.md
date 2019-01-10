@@ -22,7 +22,7 @@ VCG permite realizar el análisis del código de dos formas diferentes: a travé
 ###Interfaz gráfica
 
 Para utilizar la interfaz gráfica debemos iniciar la aplicación usando el acceso directo que se nos ha creado en el escritorio tras la instalación. Trás hacer esto, aparecerá un dialogo recordandonos que debemos escoger el lenguaje que vamos a analizar. Después, debería abrirse la ventana principal(*Imagen 1: VGC*).
-![Imagen 1: VCG](res/VentanaVCG "Imagen 1: VCG")
+![Imagen 1: VCG](res/VentanaVCG.png "Imagen 1: VCG")
 Para analizar el código seguiremos los siguientes pasos:
 1. Escoger Java como lenguaje a analizar .
 Para ello debemos seleccionar en *Setings->Java*.
@@ -30,10 +30,10 @@ Para ello debemos seleccionar en *Setings->Java*.
 Se puede analizar cualquier código Java, pero para el tutorial utilizaré el código que dejo disponible en el repositorio.
 Para buscar seleccionamos *File->New Target Directory*  o pulsamos **``Ctrl+N``**.
 Saldrá una ventana. Seleccionamos la carpeta que contenga el codigo fuente(*Imagen 2: Seleccion de carpeta*).
-![Imagen 2: Selección de carpeta](res/SeleccionarCarpeta "Imagen 2: Selección de carpeta")
+![Imagen 2: Selección de carpeta](res/SeleccionarCarpeta.png "Imagen 2: Selección de carpeta")
 3. Analizar el código.
 Una vez seleccionada la carpeta aparacerán los ficheros Java encontrados(*Imagen 3: Ficheros encontrados*).
-![Imagen 3: Ficheros encontrados](res/FicherosEncontrados "Imagen 3: Ficheros encontrados")
+![Imagen 3: Ficheros encontrados](res/FicherosEncontrados.png "Imagen 3: Ficheros encontrados")
 Para analizar el código hay 3 opciones: Solo código, solo comentarios o analisis completo. Usaremos el análisis completo para poder ver todas la funcionalidades, pero el proceso sería el mismo para los 3.
 Selecionamos *Scan->Full Scan*.
 El análisis comenzará y se mostrará una barra de progreso. 
@@ -46,10 +46,10 @@ Descripción del problema
 [Vista previa del fragmento de código]
 
 	Además se muestra con un código de colores en función de la severidad del error(*Imagen 4: Resultado Análisis*) y es posible ver una vista resumen del análisis(*Imagen 5: Resumen Análisis*).
-	![Imagen 4: Resultado Análisis](res/Resultado "Imagen 4: Resultado Análisis")
-	![Imagen 5: Resumen Análisis](res/Resumen "Imagen 5: Resumen Análisis")
+	![Imagen 4: Resultado Análisis](res/Resultado.png "Imagen 4: Resultado Análisis")
+	![Imagen 5: Resumen Análisis](res/Resumen.png "Imagen 5: Resumen Análisis")
 VCG cuenta tambíen con un modo de visualización para el análisis de los comentarios. En este modo se muestra un diagrama de sectores en el que se muestra la proporcion de comentarios, líneas de codigo, líneas en blanco y líneas con errores respecto al total de líneas (*Imagen 6: Diagrama de Sectores*).
-![Imagen 6: Diagrama de Sectores](res/Sectores "Imagen 6: Diagrama de Sectores")
+![Imagen 6: Diagrama de Sectores](res/Sectores.png "Imagen 6: Diagrama de Sectores")
 Para ver el diagrama hay que seleccionar *Scan->VisualCode/Comment Breakdown*.
 
 ###Línea de comandos (opcional)
@@ -69,7 +69,7 @@ Si no se indica una opción para exportar los resultados, solamente se inicia el
 Por tanto, si ejecutamos el siguiente comando:
 ``VisualCodeGrepper -t "<Ruta al codigo>" -l "JAVA"``
 Se abrirá el programa con el lenguaje Java y los archivos cargados listo para ejecutar el análisis(*Imagen 7: Programa tras ejecutar el comando*).
-![Imagen 7: Programa tras ejecutar el comando*](res/InicioComandos "Imagen 7: Programa tras ejecutar el comando*
+![Imagen 7: Programa tras ejecutar el comando*](res/InicioComandos.png "Imagen 7: Programa tras ejecutar el comando*
 Y, si ejecutamos este otro:
 ``VisualCodeGrepper -t "<Ruta al codigo>" -l "JAVA" -x "C:\Users\<Usuario>\Result.xml"``
 Se abrirá el programa, se ejecutará el analisis y se guardará en el escritorio en formato XML.
@@ -82,7 +82,7 @@ Los pasos a seguir son los siguientes:
 
 1. Seleccionamos *Settings->Options*.
 2. Nos posicionamos en la pestaña *Config Files* (*Imagen 8: Configuración*).
-![Imagen 8: Configuración](res/Configuracion "Imagen 8: Configuración")
+![Imagen 8: Configuración](res/Configuracion.png "Imagen 8: Configuración")
 3. Seleccionamos el botón *Edit*  junto a la ruta del fichero Java.
 4. Se abrirá el editor de texto. Nos vamos a la última linea del fichero e intoducimos la siguiente linea:
 ``java.util.List=>Has usado la interfaz List``
