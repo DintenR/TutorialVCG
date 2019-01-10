@@ -29,8 +29,11 @@ Para analizar el código seguiremos los siguientes pasos:
 1. Escoger Java como lenguaje a analizar .
 Para ello debemos seleccionar en *Setings->Java*.
 2. Buscar la carpeta que contenga el código fuente.
+
 Se puede analizar cualquier código Java, pero para el tutorial utilizaré el código que dejo disponible en el repositorio.
+
 Para buscar seleccionamos *File->New Target Directory*  o pulsamos **``Ctrl+N``**.
+
 Saldrá una ventana. Seleccionamos la carpeta que contenga el codigo fuente(*Imagen 2: Seleccion de carpeta*).
 
 ![Imagen 2: Selección de carpeta](res/SeleccionarCarpeta.png "Imagen 2: Selección de carpeta")
@@ -42,25 +45,30 @@ Saldrá una ventana. Seleccionamos la carpeta que contenga el codigo fuente(*Ima
 ![Imagen 3: Ficheros encontrados](res/FicherosEncontrados.png "Imagen 3: Ficheros encontrados")
 
 Para analizar el código hay 3 opciones: Solo código, solo comentarios o analisis completo. Usaremos el análisis completo para poder ver todas la funcionalidades, pero el proceso sería el mismo para los 3.
+
 Selecionamos *Scan->Full Scan*.
-El análisis comenzará y se mostrará una barra de progreso. 
+
+El análisis comenzará y se mostrará una barra de progreso.
+
 4. Visualización de resultados. 
 
-	Cuando termine, podremos ver los resutados obtenidos en texto con el siguiente fomato:
+Cuando termine, podremos ver los resutados obtenidos en texto con el siguiente fomato:
+```
+SEVERIDAD: Problema encontrados
 
-	SEVERIDAD: Problema encontrados
+Número de linea - Nombre del fichero
 
-	Número de linea - Nombre del fichero
+Descripción del problema
 
-	Descripción del problema
+[Vista previa del fragmento de código]
+```
 
-	[Vista previa del fragmento de código]
+Además se muestra con un código de colores en función de la severidad del error(*Imagen 4: Resultado Análisis*) y es posible ver una vista resumen del análisis(*Imagen 5: Resumen Análisis*).
 
-	Además se muestra con un código de colores en función de la severidad del error(*Imagen 4: Resultado Análisis*) y es posible ver una vista resumen del análisis(*Imagen 5: Resumen Análisis*).
-	
-	![Imagen 4: Resultado Análisis](res/Resultado.png "Imagen 4: Resultado Análisis")
+![Imagen 4: Resultado Análisis](res/Resultado.png "Imagen 4: Resultado Análisis")
 
-	![Imagen 5: Resumen Análisis](res/Resumen.png "Imagen 5: Resumen Análisis")
+![Imagen 5: Resumen Análisis](res/Resumen.png "Imagen 5: Resumen Análisis")
+
 VCG cuenta tambíen con un modo de visualización para el análisis de los comentarios. En este modo se muestra un diagrama de sectores en el que se muestra la proporcion de comentarios, líneas de codigo, líneas en blanco y líneas con errores respecto al total de líneas (*Imagen 6: Diagrama de Sectores*).
 
 ![Imagen 6: Diagrama de Sectores](res/Sectores.png "Imagen 6: Diagrama de Sectores")
@@ -70,6 +78,7 @@ Para ver el diagrama hay que seleccionar *Scan->VisualCode/Comment Breakdown*.
 ### Línea de comandos (opcional)
 
 Este apartado lo he marcado como opcional, ya que es algo mas complicado y tedioso, debido a que se antoja necesario conocer el comando, las opciones y la ruta hasta el código fuente. Además requiere tener añadido el programa a la variable path del sistema para que reconozca el comando. A pesar de esto, puede tener sentido si queremos automatizar el análisis mediante un script para ejecutarlo de manera periódica o después de cada compilación.
+
 Para utilizar el programa desde linea de comandos hay que escribir el comando que tiene la siguiente sintaxis (solo incluyo los necesarios o más interesantes para este ejercicio, el resto estan disponibles en la [página web](https://github.com/nccgroup/VCG) del proyecto):
 ```
 VisualCodeGrepper [options]
@@ -86,7 +95,9 @@ Por tanto, si ejecutamos el siguiente comando:
 ``VisualCodeGrepper -t "<Ruta al codigo>" -l "JAVA"``
 
 Se abrirá el programa con el lenguaje Java y los archivos cargados listo para ejecutar el análisis(*Imagen 7: Programa tras ejecutar el comando*).
-![Imagen 7: Programa tras ejecutar el comando*](res/InicioComandos.png "Imagen 7: Programa tras ejecutar el comando*
+
+![Imagen 7: Programa tras ejecutar el comando](res/InicioComandos.png "Imagen 7: Programa tras ejecutar el comando")
+
 Y, si ejecutamos este otro:
 
 ``VisualCodeGrepper -t "<Ruta al codigo>" -l "JAVA" -x "C:\Users\<Usuario>\Result.xml"``
@@ -96,19 +107,27 @@ Se abrirá el programa, se ejecutará el analisis y se guardará en el escritori
 ## Configuración de perfiles
 
 La aplicación toma los tipos de errores que debe detectar de un fichero de texto plano. Este fichero se puede comentar, de manera que es posible escoger que reglas de las predefinidas quieres que se apliquen o incluso añadir nuevas reglas.
+
 Para probar esta opción vamos a modificar las reglas para que se muestre un error cuando se utiliza la interfaz List de java. He escogido esta interfaz porque, aunque no es potencialmente peligrosa, se usa en varias ocasiones en el código proporcionado y, por tanto, sirve como ejemplo para ver las reglas personalizadas.
+
 Los pasos a seguir son los siguientes:
 
 1. Seleccionamos *Settings->Options*.
+
 2. Nos posicionamos en la pestaña *Config Files* (*Imagen 8: Configuración*).
+
 ![Imagen 8: Configuración](res/Configuracion.png "Imagen 8: Configuración")
+
 3. Seleccionamos el botón *Edit*  junto a la ruta del fichero Java.
+
 4. Se abrirá el editor de texto. Nos vamos a la última linea del fichero e intoducimos la siguiente linea:
 
 ``java.util.List=>Has usado la interfaz List``
 
 Y guardamos el fichero en el escritorio o en algún otro lugar para no sobreescribir el original.
-5. En la pantalla de configuracion, seleccionamos la opción *...* (tres puntos)
-para buscar el nuevo fichero de configuracion.
+
+5. En la pantalla de configuracion, seleccionamos la opción *...* (tres puntos) para buscar el nuevo fichero de configuracion.
+
 6. Acceptamos lo cambios seleccionando el botón *OK*.
+
 7. Por último, seleccionamos *File->Clear* para eliminar el análisis anterior y repetimos el proceso de análisis para comprobar que ha funcionado.
