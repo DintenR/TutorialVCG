@@ -1,8 +1,10 @@
 #Tutorial-VCG
+
 En este repositorio se encuentra todo el material necesario para seguir el tutorial de la herramienta **Visual Code Grepper** (VCG).
 El tutorial consta de 3 partes: Instalación, Analasis del código y configuralción de perfiles. En cada una de ellas aparecen los pasos a seguir para conseguir completar cada apartado.
 
 [TOC]
+
 ##Instalación
 En este apartado vamos a instalar el software de analisis de codigo estático VCG. Para ello hay que seguir los pasos que se indican a continuacion:
 1. Accedemos a la [página de descarga](https://sourceforge.net/projects/visualcodegrepp/ "VCG").
@@ -11,10 +13,14 @@ En este apartado vamos a instalar el software de analisis de codigo estático VC
 4. Seguimos los pasos que nos aparecen dejando la configuración** por defecto**.
 
 Tras seguir estos pasos deberiamos haber instalado el programa y el icono debería aparecer en el escritorio.
+
 ##Analisis de código
+
 En este apartado vamos a realizar el analisis del código de una aplicación Java/Android, aunque el programa también admite otros lenguajes de programación como: C++, C#, VB, PHP o PL/SQL.
 VCG permite realizar el análisis del código de dos formas diferentes: a través de su interfaz gráfica o por comandos. En primer lugar haremos uso de la interfaz gráfica, ya que me parece la forma más comoda de utilizar el programa.
+
 ###Interfaz gráfica
+
 Para utilizar la interfaz gráfica debemos iniciar la aplicación usando el acceso directo que se nos ha creado en el escritorio tras la instalación. Trás hacer esto, aparecerá un dialogo recordandonos que debemos escoger el lenguaje que vamos a analizar. Después, debería abrirse la ventana principal(*Imagen 1: VGC*).
 ![Imagen 1: VCG](res/VentanaVCG "Imagen 1: VCG")
 Para analizar el código seguiremos los siguientes pasos:
@@ -47,6 +53,7 @@ VCG cuenta tambíen con un modo de visualización para el análisis de los comen
 Para ver el diagrama hay que seleccionar *Scan->VisualCode/Comment Breakdown*.
 
 ###Línea de comandos (opcional)
+
 Este apartado lo he marcado como opcional, ya que es algo mas complicado y tedioso, debido a que se antoja necesario conocer el comando, las opciones y la ruta hasta el código fuente. Además requiere tener añadido el programa a la variable path del sistema para que reconozca el comando. A pesar de esto, puede tener sentido si queremos automatizar el análisis mediante un script para ejecutarlo de manera periódica o después de cada compilación.
 Para utilizar el programa desde linea de comandos hay que escribir el comando que tiene la siguiente sintaxis (solo incluyo los necesarios o más interesantes para este ejercicio, el resto estan disponibles en la [página web](https://github.com/nccgroup/VCG) del proyecto):
 ```
@@ -68,6 +75,7 @@ Y, si ejecutamos este otro:
 Se abrirá el programa, se ejecutará el analisis y se guardará en el escritorio en formato XML.
 
 ##Configuración de perfiles
+
 La aplicación toma los tipos de errores que debe detectar de un fichero de texto plano. Este fichero se puede comentar, de manera que es posible escoger que reglas de las predefinidas quieres que se apliquen o incluso añadir nuevas reglas.
 Para probar esta opción vamos a modificar las reglas para que se muestre un error cuando se utiliza la interfaz List de java. He escogido esta interfaz porque, aunque no es potencialmente peligrosa, se usa en varias ocasiones en el código proporcionado y, por tanto, sirve como ejemplo para ver las reglas personalizadas.
 Los pasos a seguir son los siguientes:
