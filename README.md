@@ -15,7 +15,7 @@ En este apartado vamos a instalar el software de analisis de codigo estático VC
 1. Accedemos a la [página de descarga](https://sourceforge.net/projects/visualcodegrepp/ "VCG").
 2. Pulsamos el boton **Download**.
 3. Ejecutamos el instalador.
-4. Seguimos los pasos que nos aparecen dejando la configuración** por defecto**.
+4. Seguimos los pasos que nos aparecen dejando la configuración por defecto.
 
 Tras seguir estos pasos deberiamos haber instalado el programa y el icono debería aparecer en el escritorio.
 
