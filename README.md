@@ -78,7 +78,7 @@ VCG cuenta tambíen con un modo de visualización para el análisis de los comen
 
 ![Imagen 6: Diagrama de Sectores](res/Sectores.png "Imagen 6: Diagrama de Sectores")
 
-	Para ver el diagrama hay que seleccionar *Scan->VisualCode/Comment Breakdown*.
+Para ver el diagrama hay que seleccionar *Scan->VisualCode/Comment Breakdown*.
 
 ### Línea de comandos (opcional)
 
