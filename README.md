@@ -5,9 +5,9 @@ El tutorial consta de 3 partes: Instalación, Analasis del código y configuralc
 
 * [Turorial_VCG](#Tutorial-VCG)
 	* [Instalación](#Instalación)
-	* [Analisis de código](#Analisis-de-codigo)
+	* [Analisis de código](#Analisis-de-código)
 		* [Interfaz Gráfica](#Interfaz-gráfica)
-		* [Línea de comandos (opcional)](#Línea-de-comandos-\(opcional\))
+		* [Línea de comandos (opcional)](#Línea-de-comandos-opcional)
 	* [Configuración de perfiles](#Configuración-de-perfiles)
 
 ## Instalación
