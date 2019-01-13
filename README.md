@@ -1,7 +1,7 @@
 # Tutorial-VCG
 
 En este repositorio se encuentra todo el material necesario para seguir el tutorial de la herramienta **Visual Code Grepper** (VCG).
-El tutorial consta de 3 partes: Instalación, Analasis del código y configuralción de perfiles. En cada una de ellas aparecen los pasos a seguir para conseguir completar cada apartado.
+El tutorial consta de 3 partes: Instalación, Análisis del código y configuración de perfiles. En cada una de ellas aparecen los pasos a seguir para conseguir completar cada apartado.
 
 * [Turorial_VCG](#Tutorial-VCG)
 	* [Instalación](#Instalación)
@@ -11,9 +11,9 @@ El tutorial consta de 3 partes: Instalación, Analasis del código y configuralc
 	* [Configuración de perfiles](#Configuración-de-perfiles)
 
 ## Instalación
-En este apartado vamos a instalar el software de analisis de codigo estático VCG. Para ello hay que seguir los pasos que se indican a continuacion:
+En este apartado vamos a instalar el software de análisis estático de código VCG. Para ello hay que seguir los pasos que se indican a continuacion:
 1. Accedemos a la [página de descarga](https://sourceforge.net/projects/visualcodegrepp/ "VCG").
-2. Pulsamos el boton **Download**.
+2. Pulsamos el botón **Download**.
 3. Ejecutamos el instalador.
 4. Seguimos los pasos que nos aparecen dejando la configuración por defecto.
 
@@ -21,8 +21,8 @@ Tras seguir estos pasos deberiamos haber instalado el programa y el icono deber�
 
 ## Analisis de código
 
-En este apartado vamos a realizar el analisis del código de una aplicación Java/Android, aunque el programa también admite otros lenguajes de programación como: C++, C#, VB, PHP o PL/SQL.
-VCG permite realizar el análisis del código de dos formas diferentes: a través de su interfaz gráfica o por comandos. En primer lugar haremos uso de la interfaz gráfica, ya que me parece la forma más comoda de utilizar el programa.
+En este apartado vamos a realizar el análisis del código de una aplicación Java/Android, aunque el programa también admite otros lenguajes de programación como: C++, C#, VB, PHP o PL/SQL.
+VCG permite realizar el análisis del código de dos formas diferentes: a través de su interfaz gráfica o por comandos. En primer lugar haremos uso de la interfaz gráfica, ya que me parece la forma más cómoda de utilizar el programa.
 
 ### Interfaz gráfica
 
@@ -49,7 +49,7 @@ Para ello debemos seleccionar en *Setings->Java*.
 
 ![Imagen 3: Ficheros encontrados](res/FicherosEncontrados.png "Imagen 3: Ficheros encontrados")
 
-Para analizar el código hay 3 opciones: Solo código, solo comentarios o analisis completo. Usaremos el análisis completo para poder ver todas la funcionalidades, pero el proceso sería el mismo para los 3.
+Para analizar el código hay 3 opciones: Solo código, solo comentarios o análisis completo. Usaremos el análisis completo para poder ver todas la funcionalidades, pero el proceso sería el mismo para los 3.
 
 Selecionamos *Scan->Full Scan*.
 
@@ -74,7 +74,7 @@ Además se muestra con un código de colores en función de la severidad del err
 
 ![Imagen 5: Resumen Análisis](res/Resumen.png "Imagen 5: Resumen Análisis")
 
-VCG cuenta tambíen con un modo de visualización para el análisis de los comentarios. En este modo se muestra un diagrama de sectores en el que se muestra la proporcion de comentarios, líneas de codigo, líneas en blanco y líneas con errores respecto al total de líneas (*Imagen 6: Diagrama de Sectores*).
+VCG cuenta tambíen con un modo de visualización para el análisis de los comentarios. En este modo se muestra un diagrama de sectores en el que se muestra la proporción de comentarios, líneas de codigo, líneas en blanco y líneas con errores respecto al total de líneas (*Imagen 6: Diagrama de Sectores*).
 
 ![Imagen 6: Diagrama de Sectores](res/Sectores.png "Imagen 6: Diagrama de Sectores")
 
@@ -84,7 +84,7 @@ Para ver el diagrama hay que seleccionar *Scan->VisualCode/Comment Breakdown*.
 
 Este apartado lo he marcado como opcional, ya que es algo mas complicado y tedioso, debido a que se antoja necesario conocer el comando, las opciones y la ruta hasta el código fuente. Además requiere tener añadido el programa a la variable path del sistema para que reconozca el comando. A pesar de esto, puede tener sentido si queremos automatizar el análisis mediante un script para ejecutarlo de manera periódica o después de cada compilación.
 
-Para utilizar el programa desde linea de comandos hay que escribir el comando que tiene la siguiente sintaxis (solo incluyo los necesarios o más interesantes para este ejercicio, el resto estan disponibles en la [página web](https://github.com/nccgroup/VCG) del proyecto):
+Para utilizar el programa desde linea de comandos hay que escribir el comando, que tiene la siguiente sintaxis (solo incluyo los necesarios o más interesantes para este ejercicio, el resto estan disponibles en la [página web](https://github.com/nccgroup/VCG) del proyecto):
 ```
 VisualCodeGrepper [options]
 	-t, --target  <ruta al fichero | ruta al directorio>: Indica los ficheros a escanear.
@@ -105,7 +105,7 @@ Se abrirá el programa con el lenguaje Java y los archivos cargados listo para e
 
 Y, si ejecutamos este otro:
 
-``VisualCodeGrepper -t "<Ruta al codigo>" -l "JAVA" -x "C:\Users\<Usuario>\Result.xml"``
+``VisualCodeGrepper -t "<Ruta al codigo>" -l "JAVA" -x "C:\Users\<Usuario>\Desktop\Result.xml"``
 
 Se abrirá el programa, se ejecutará el analisis y se guardará en el escritorio en formato XML.
 
@@ -131,7 +131,7 @@ Los pasos a seguir son los siguientes:
 
 Y guardamos el fichero en el escritorio o en algún otro lugar para no sobreescribir el original.
 
-5. En la pantalla de configuracion, seleccionamos la opción *...* (tres puntos) para buscar el nuevo fichero de configuracion.
+5. En la pantalla de configuración, seleccionamos la opción *...* (tres puntos) para buscar el nuevo fichero de configuracion.
 
 6. Acceptamos lo cambios seleccionando el botón *OK*.
 
